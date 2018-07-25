@@ -12,11 +12,11 @@ function render(node) {
 
   const element = document.createElement(node.tag);
 
-  Object.entries(args || {}).forEach(arg =>
+  Object.entries(node.args || {}).forEach(arg =>
     element.setAttribute(arg[0], arg[1])
   );
-
-  (nodeChildren || []).forEach(child => element.appendChild(render(child)));
+  
+  (node.children || []).forEach(child => element.appendChild(render(child)));
 
   return element;
 }

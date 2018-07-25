@@ -6,5 +6,9 @@
   "repository": "https://github.com/pichardoJ/jsx-scratch.git",
   "author": "J. Pichardo <j.pichardo@tuta.io>",
   "license": "unlicense",
-  "private": false
+  "private": false,
+  "scripts": {},
+  "devDependencies": {
+    "jest": "^23.4.1"
+  }
 }
